@@ -16,6 +16,7 @@ header{
   margin-bottom: 40px;
   margin-top: 20px;
   align-items: center;
+  border-bottom: 1px solid #9fbccd;
 }
 
 header a{
@@ -25,12 +26,21 @@ header a{
 header .logo{
   font-weight: bold;
   font-size: 24px;
+  color: rgb(46, 77, 118)
 }
 
-header .menu{
+.menu{
+  display: flex;
+  gap: 10px;
+}
+
+.login, .hamburger-menu{
+  color:rgb(46, 77, 118)
+}
+
+.hamburger-menu{
   display: flex;
   align-items: center;
-  gap: 10px;
 }
 
 .post {
@@ -57,4 +67,62 @@ header .menu{
   margin: 0;
   color: rgb(194, 192, 192);
   font-size: 16px;
+}
+
+form.login ,form.register{
+  max-width: 450px;
+  margin: auto;
+  border: 2px solid rgb(194, 192, 192);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+input {
+  display: block;
+  margin: 10px 0;
+  width: 100%;
+  padding:5px;
+  border: 2px solid rgb(194, 192, 192);
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+button {
+  display: block;
+  width: 40%;
+  margin: auto;
+  margin-top: 20px;
+  border: 2px solid rgb(46, 77, 118);
+  background-color: white;
+  border-radius: 5px;
+  padding: 5px;
+}
+button:hover{
+  background-color: rgb(46, 77, 118);
+  color:rgb(194, 192, 192)
+}
+
+.login a{
+  text-decoration: none;
+  font-size: 14px;
+  color:rgb(46, 77, 118);
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.register-button{
+  display: block;
+  width: 40%;
+  margin: auto;
+  margin-top: 20px;
+  border: 2px solid rgb(46, 77, 118);
+  background-color: white;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+h2.title {
+  text-align: center;
+  color:rgb(46, 77, 118)
 }
