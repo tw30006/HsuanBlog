@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
-const port = 3000
+const cors = require('cors');
+const port = 4000
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 
@@ -15,7 +16,11 @@ mongoose
     console.log('err');
   })
 
-app.get('/', (req, res)=>{
-    res.send('hello world')
+app.use(cors());
+app.use(express.json());
+
+app.post('/register', (req, res)=>{
+  const {username,password,name} =req.body;
+  res.json({requestData:{username,password,name}});
 })
 app.listen(port)

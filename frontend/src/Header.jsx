@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom'
 export default function Header() {
     return (
       <header>
-      <Link to="/" className="logo">Esther's blog</Link>
+      <Link to="/" className="logo">Nodium</Link>
       <nav className="menu">
         <Link to="/login" className="login">登入</Link>
         <Link className="hamburger-menu"><FiMenu /></Link>
