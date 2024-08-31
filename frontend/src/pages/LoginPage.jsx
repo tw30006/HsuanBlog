@@ -5,7 +5,7 @@ export default function LoginPage() {
             <h2 className="title">登入</h2>
             <input type="text" placeholder="帳號"/>
             <input type="text" placeholder="密碼" />
-            <button type="button">登入</button>
+            <button>登入</button>
             <Link to="/register">還沒有帳號？註冊</Link>
         </form>
     )
