@@ -23,7 +23,7 @@ export default function Register() {
         <form className="register" onSubmit={register}>
             <h2 className="title">註冊</h2>
             <input type="text" placeholder="帳號" value={username} onChange={e => setUsername(e.target.value)}/>
-            <input type="text" placeholder="密碼" value={password} onChange={e => setPassword(e.target.value)}/>
+            <input type="password" placeholder="密碼" value={password} onChange={e => setPassword(e.target.value)}/>
             <input type="text" placeholder="姓名" value={name} onChange={e => setName(e.target.value)}/>
             <button className="register-button">註冊</button>
         </form>
