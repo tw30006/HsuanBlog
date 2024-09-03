@@ -1,6 +1,6 @@
 export default function Post() {
     return(
-        <section className="post">
+      <section className="post">
       <div className="image">
         <img src="../public/photo/post2.jpg" alt="" />
       </div>
